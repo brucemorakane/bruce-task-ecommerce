@@ -68,12 +68,12 @@ var productsState = [
 ]
 
 // show var with the banner
-var primenumber = 0;
+var cartCounter = 0;
 
 function Addcart() {
   
-  primenumber = document.getElementById('primenumber').innerHTML = ++ primenumber;
-  console.log(primenumber);
+  counter = document.getElementById('counter').innerHTML = ++ cartCounter;
+  console.log(cartCounter);
 }
 
 function approve()
