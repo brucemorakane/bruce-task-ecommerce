@@ -3,7 +3,7 @@
   --bodyBg: #eee;
   --white: #fff;
   --bodyColor: rgb(63, 63, 63);
-  --primary: rgb(159, 13, 139);
+  --primary: rgb(18, 177, 63);
   --transition: ease-in-out 300ms;
   --gold: rgb(255, 157, 0);
 }
@@ -286,3 +286,4 @@ a,
       -50px -50px 0px -30px rgba(0, 0, 0, 0);
   }
 }
+

@@ -9,13 +9,13 @@
   </head>
   <body>
     <!--LOGO-->
-    <div class="logo"><span>DA</span> PWD shopping app</div>
+    <div class="logo"><span>DA Program</span>  Mboile application for shopping</div>
 
     <div class="container">
       <!--NAVBAR-->
       <nav>
         <a href="./index.html" class="active">Home</a>
-        <a href="#">Cart: <span>0</span></a>
+        <a href="/cart.html">Cart: <span id="primenumber">1</span></a>
       </nav>
 
       <!--PRODUCTS SECTION-->
@@ -23,22 +23,38 @@
         <div class="product">
           <div class="product__img">
             <img
-              src="https://www.istore.co.za/media/catalog/product/m/a/macbook_pro_space_grey-1_2.png?format=jpeg"
-              alt=""
+            src="https://www.istore.co.za/media/catalog/product/m/a/macbook_pro_space_grey-1_2.png?format=jpeg"
+            alt=""
             />
           </div>
 
-          <div class="product__name">Computer</div>
+          <div class="product__name">Computer 10000</div>
           <div class="product__rate">
             <span>*</span><span>*</span><span>*</span><span>*</span>
           </div>
-          <div class="product__price">R <span>2000</span></div>
-          <button>+ ADD TO CART</button>
+          <div class="product__price">R<span>3500</span></div>
+          <button onclick="Addcart()">+ ADD TO CART</button>
         </div>
       </section>
     </div>
 
-    <!--JAVASCRIPT-->
+    <br><br>
+    <div class="addcarts">
+      <h2>add carts</h2>
+      <br>
+      <h4>approve:</h4><span id="banneramount">R5000</span>
+      <div class="product items">
+        <div class="showphoto">
+          <img
+          src="https://www.istore.co.za/media/catalog/product/m/a/macbook_pro_space_grey-1_2.png?format=jpeg"
+          alt=""
+          />
+          <div class="product_sell">balance_price</div>
+          <div class="product_percentage">
+
+        </div>
+      </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
