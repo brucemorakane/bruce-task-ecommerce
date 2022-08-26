@@ -67,24 +67,15 @@ var productsState = [
   },
 ]
 
-// show var with the banner
-
-// var cartCounter = 0;
-
-// function Addcart() {
-  
-//   counter = document.getElementById('counter').innerHTML = ++ cartCounter;
-//   console.log(cartCounter);
-// }
-
-// function approve()
-
-
-
-
 var products = document.getElementById('products')
-var banneramount = document.getElementById('banneramount')
 
+var DataAarry = document.getElementById('DataAarry')
+
+let numberCount = 0;
+
+function addproduct() {
+  DataAarry = document.getElementById('DataAarry').innerHTML = ++ numberCount;
+}
 
 function Productapprove() {
 
@@ -107,7 +98,7 @@ function Productapprove() {
                 ${'<span>*</span>'.repeat(productsState[i].rates)}
               </div>
               <div class="product__price">R <span>${productsState[i].price}</span></div> 
-                <button>+ ADD TO CART</button> 
+                <button onclick="addproduct()">+ ADD TO CART</button> 
           </div>
           
     `
@@ -118,17 +109,6 @@ function Productapprove() {
 
 Productapprove()
 
-
-
-
-/* Assign actions */
-$('.product-quantity input').change( function() {
-  updateQuantity(this);
-});
-
-$('.product-removal button').click( function() {
-  removeItem(this);
-});
 
 
 
