@@ -1,4 +1,5 @@
-// PRODUCTS VARIABLE
+// PRODUCTS VARIABLE with html
+
 var productsState = [
   {
     id: 1,
@@ -67,20 +68,27 @@ var productsState = [
   },
 ]
 
+// product for loop to approve
 var products = document.getElementById('products')
 
 var DataAarry = document.getElementById('DataAarry')
 
-let numberCount = 0;
+var amount = document.getElementById('amount')
 
+let number = 0;
+
+// function the button DD TO CART to approve
 function addproduct() {
-  DataAarry = document.getElementById('DataAarry').innerHTML = ++ numberCount;
+  DataAarry = document.getElementById('DataAarry').innerHTML = number ++;
 }
+
+
 
 function Productapprove() {
 
- // DISPLAY PRODUCTS IN HOME PAGE
-  products.innerHTML = ""
+ // DISPLAY PRODUCTS IN HOME PAGE and Emement
+
+  products.innerHTML = ``
   
   // loop into productsState and display
   for (let i = 0; i < productsState.length; i++) {
@@ -102,6 +110,7 @@ function Productapprove() {
           </div>
           
     `
+    
     
     
   }
