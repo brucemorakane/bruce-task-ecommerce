@@ -110,7 +110,10 @@ function Productapprove() {
           </div>
           
     `
-    
+    function addproduct[i] {
+     addproduct.push(productsState[i]);
+     
+    }
     
     
   }
